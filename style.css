@@ -1,0 +1,258 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ .container{
+    width: 90%;
+    margin: auto;
+    height: 80vh;
+    transform: translateY(10%);
+    background: hsl(229, 57%, 11%);
+    background-image: url(/images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 50%;
+    
+ }
+   body{
+    font-family: 'Raleway', sans-serif;
+   }
+  section{
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+
+
+  }
+  .section-one{
+    width: 25%;
+    height: 160px;
+    border-radius: 10px;
+    border-top-right-radius: 40%;
+    background: hsl(228, 56%, 26%);
+    
+  }
+    .section-one svg{
+       margin: 10px 0 0 20px;
+    }
+     section .icons{
+      display: flex;
+     }
+    .icons .icon{
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      margin: 25px 0 0 20px;
+      background:  hsl(229, 57%, 11%);
+    }
+      .icons .icon svg{
+         margin: 15px;
+      }
+  .section-two{
+    width: 45%;
+    height: 130px;
+    border-radius: 10px;
+    margin-top: 3%; 
+    background: hsl(228, 56%, 26%);
+  }
+   .section-two p{
+    padding: 20px;
+    color: hsl(229, 7%, 55%);
+    font-size: 15px;
+   }
+     .box2{
+        width: 90%;
+        border: 1px solid black;
+        height: 20px;
+        margin-left: 20px;
+        border-radius: 10px;
+        position: relative;
+        display: inline-block;
+     }
+       .box2 .tooltiptext{
+        width: 120px;
+        background-color: white;
+        height: 50px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 500%;
+        left: 90%;
+        margin-left: -60px;
+        
+       }
+        .box2 .tooltiptext::after{
+            content: "" ;
+            position: absolute;
+            top: 100%;
+            left: 20%;
+            margin-left: 35px;
+            border-width: 30px;
+             border-style: solid;
+             border-color: rgb(250, 249, 249) transparent transparent transparent;
+        }
+         .box2:hover .tooltiptext{
+             visibility: visible;
+         }
+      .box3{
+        width: 70%;
+        height: 20px;
+        border-radius: 10px;
+         background:-webkit-linear-gradient( left, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+      }
+       .circle{
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: white;
+        margin-left: 95%;
+       }
+        aside{
+          display: flex;
+          margin-left: 10px;
+          gap: 66%;
+          color: white;
+          margin-top: -20px;
+         
+
+        }
+         aside .dif{
+          color: white;
+         }
+           .no{
+            color: white;
+           }
+          
+          /* -----smallscreen */
+          @media screen and (max-width:871px){
+            
+          body{
+            font-family: 'Raleway', sans-serif;
+           }
+            .container{
+              transform: translateY(0);
+              width: 100%;
+              height: 100vh;
+            }
+          section{
+            width: 100%;
+            height: 500px;
+           flex-direction: column;
+            gap: 20px;
+
+          }
+          .section-one{
+            width: 90%;
+            height: 160px;
+            margin-top: 50px;
+            border-radius: 10px;
+            border-top-right-radius: 40%;
+            background: hsl(228, 56%, 26%);
+             
+          }
+            .section-one svg{
+               margin: 10px 0 0 20px;
+            }
+             section .icons{
+              display: flex;
+             }
+            .icons .icon{
+              width: 50px;
+              height: 50px;
+              border-radius: 10px;
+              margin: 25px 0 0 20px;
+              background:  hsl(229, 57%, 11%);
+            }
+              .icons .icon svg{
+                 margin: 15px;
+              }
+          .section-two{
+            width: 90%;
+            height: 150px;
+            border-radius: 10px;
+            margin-top: 3%; 
+            background: hsl(228, 56%, 26%);
+          }
+           .section-two p{
+            padding: 20px;
+            color: hsl(229, 7%, 55%);
+            font-size: 15px;
+           }
+             .box2{
+                width: 90%;
+                border: 1px solid black;
+                height: 20px;
+                margin-left: 20px;
+                border-radius: 10px;
+                position: relative;
+                display: inline-block;
+             }
+             .box2 .tooltiptext::after{
+              content: "" ;
+              position: absolute;
+              top: 100%;
+              left: 20%;
+              margin-left: 0;
+              border-width: 0;
+               border-style: solid;
+               border-color: rgb(250, 249, 249) transparent transparent transparent;
+          }
+               .box2 .tooltiptext{
+                  /* visibility: hidden; */
+                  width: 150px;
+                  background-color: white;
+                  color:  hsl(229, 57%, 11%);
+                  border-radius: 6px;
+                  padding: 15px 0 0 20px;
+                  text-align: left;
+                  position: absolute;
+                  z-index: 1;
+                  font-size: 20px;
+                  top: 400%;
+                  left: 50%;
+                  margin-left: -60px;
+              }
+               
+                 .box2:hover .tooltiptext{
+                     visibility: visible;
+                 }
+              .box3{
+                width: 70%;
+                height: 20px;
+                border-radius: 10px;
+                 background:-webkit-linear-gradient( left, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+              }
+               .circle{
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                background: white;
+                margin-left: 95%;
+               }
+                aside{
+                  display: flex;
+                  margin-left: 10px;
+                  gap: 45%;
+                  color: white;
+                  margin-top: -20px;
+                 
+        
+                }
+                 aside .dif{
+                  color: white;
+                 }
+                   .no{
+                    color: hsl(229, 7%, 55%);
+                    font-size: 15px;
+                   }
+                    
+                }
+        
+        
